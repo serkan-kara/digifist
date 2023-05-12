@@ -2,26 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "ITC-bk";
+  src: url("../assets/fonts/ITCAvantGardePro-Bk.otf")
+}
+@font-face {
+  font-family: "ITC-bold";
+  src: url("../assets/fonts/ITCAvantGardePro-Bold.otf")
+}
+@font-face {
+  font-family: "ITC-demi";
+  src: url("../assets/fonts/ITCAvantGardePro-Demi.otf")
+}
+@font-face {
+  font-family: "ITC-md";
+  src: url("../assets/fonts/ITCAvantGardePro-Md.otf")
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/Avenir.ttc")
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+body, html {
+  height: 100%;
+  width: 100%;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+
+.swiper .swiper-slide {
+  width: 148px;
 }
